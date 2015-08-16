@@ -119,7 +119,7 @@ end
 
 function Pomelo:disconnect()
     printf("Pomelo:disconnect()")
-    if self._isReady() then
+    if self:_isReady() then
         self.socket:close()
         self.socket = nil
     end
